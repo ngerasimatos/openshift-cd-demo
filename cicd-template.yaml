@@ -249,8 +249,8 @@ objects:
             timeoutSeconds: 5
           resources:
             requests:
-              memory: 512Mi
-              cpu: 200m
+              memory: 1Gi
+              cpu: 400m
             limits:
               memory: 2Gi
               cpu: 1
@@ -380,10 +380,10 @@ objects:
             protocol: TCP
           resources:
             requests:
-              memory: 256Mi
-              cpu: 100m
+              memory: 1Gi
+              cpu: 500m
             limits:
-              memory: 512Mi
+              memory: 1Gi
               cpu: 500m
           terminationMessagePath: /dev/termination-log
           readinessProbe:
@@ -484,7 +484,7 @@ objects:
           resources:
             requests:
               cpu: 100m
-              memory: 128Mi
+              memory: 256Mi
             limits:
               cpu: 200m
               memory: 256Mi
@@ -914,7 +914,7 @@ objects:
           resources:
             requests:
               cpu: 500m
-              memory: 1Gi
+              memory: 2Gi
             limits:
               cpu: 2
               memory: 2Gi
